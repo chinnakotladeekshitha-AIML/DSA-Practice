@@ -4,5 +4,5 @@ class Solution:
         for i, num in enumerate(nums):
             diff = target - num
             if diff in hashmap:
-                return [hashmap, i] # ← IKKADA MAARCHU
+                return [hashmap[diff], i]
             hashmap[num] = i
